@@ -1,0 +1,39 @@
+ALGORITHM phrase
+VAR
+    phrase := STRING;
+BEGIN
+write ("écrire une phrase")
+    read (phrase);
+    A:=0;
+    B:=0;
+    C:=0;
+    FOR i FROM 0 TO phrase.length STEP step  DO
+
+    IF (phrase[i]<>".") THEN
+        A:A+1;
+        ELSE
+        break
+        END_IF
+
+    IF (phrase[i]=" ") THEN
+        B:B+1;
+    END_IF    
+
+    IF (phrase[i]="a") or (phrase[i]="o") or (phrase[i]="i") or (phrase[i]="y") or (phrase[i]="e") or THEN
+        C:C+1;
+    END_IF
+    write("longeur de la phrase")
+    write (A)
+    write ("nombres de mots")
+    write (B)
+    write ("nombres de voyelles")
+    write (C)
+
+    
+    END_FOR
+
+
+
+
+
+END
